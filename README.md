@@ -50,6 +50,8 @@ Run this script to move all the files into place:
 
     move_files_after_editing.sh
 
+Or, if you are on Windows, run: `move_files_after_editing.bat`.
+
 This script:
 
 1. Moves `wp-config.php` from root into `wordpress/`, replacing the file there.
@@ -113,7 +115,7 @@ Now, just like you did when WordPress was running locally, you'll need to run th
 
     http://<PROJECT_ID>.appspot.com/wp-admin/install.php
 
-Or, to install directly from the root URL, you can define WP_SITEURL in your `wp-config.php`, e.g.:
+Or, to install directly from the root URL, you can define `WP_SITEURL` in your `wp-config.php`, e.g.:
 
     define( 'WP_SITEURL', 'http://<YOUR_PROJECT_ID>.appspot.com/');
 
