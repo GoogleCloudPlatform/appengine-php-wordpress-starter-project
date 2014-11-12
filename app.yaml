@@ -9,14 +9,14 @@ handlers:
   upload: wordpress/.*\.(htm|html|css|js)$
   application_readable: true
 
-- url: /wp-content/(.*\.(ico|jpg|png|gif))$
+- url: /wp-content/(.*\.(ico|jpg|png|gif|woff|ttf))$
   static_files: wordpress/wp-content/\1
-  upload: wordpress/wp-content/.*\.(ico|jpg|png|gif)$
+  upload: wordpress/wp-content/.*\.(ico|jpg|png|gif|woff|ttf)$
   application_readable: true
 
-- url: /(.*\.(ico|jpg|png|gif))$
+- url: /(.*\.(ico|jpg|png|gif|woff|ttf))$
   static_files: wordpress/\1
-  upload: wordpress/.*\.(ico|jpg|png|gif)$
+  upload: wordpress/.*\.(ico|jpg|png|gif|woff|ttf)$
   application_readable: true
 
 - url: /wp-admin/(.+)
