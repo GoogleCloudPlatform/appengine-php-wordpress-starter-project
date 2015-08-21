@@ -31,7 +31,7 @@
         /** Local environment MySQL login info */
         define('DB_HOST', '127.0.0.1');
         define('DB_USER', 'root');
-        define('DB_PASSWORD', 'password');
+        define('DB_PASSWORD', '2fahtwings');
     }
 
     // Determine HTTP or HTTPS, then set WP_SITEURL and WP_HOME
