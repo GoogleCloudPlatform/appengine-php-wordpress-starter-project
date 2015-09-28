@@ -19,14 +19,14 @@
 
     // ** MySQL settings - You can get this info from your web host ** //
     /** The name of the database for WordPress */
-    define('DB_NAME', 'wordpress_db');
+    define('DB_NAME', 'wordpress');
 
     if (isset($_SERVER['SERVER_SOFTWARE']) && strpos($_SERVER['SERVER_SOFTWARE'],'Google App Engine') !== false) {
         /** Live environment Cloud SQL login and SITE_URL info */
         /** Note that from App Engine, the password is not required, so leave it blank here */
-        define('DB_HOST', ':/cloudsql/your-project-id:wordpress');
+        define('DB_HOST', ':/cloudsql/wordpress:wordpress');
         define('DB_USER', 'root');
-        define('DB_PASSWORD', '');
+        define('DB_PASSWORD', '!');
     } else {
         /** Local environment MySQL login info */
         define('DB_HOST', '127.0.0.1');
@@ -76,7 +76,7 @@
      * You can have multiple installations in one database if you give each a unique
      * prefix. Only numbers, letters, and underscores please!
      */
-    $table_prefix  = 'wp_';
+    $table_prefix  = 'wp__';
 
     /**
      * WordPress Localized Language, defaults to English.
