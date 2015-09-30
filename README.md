@@ -144,7 +144,7 @@ Hit **Save Changes** to commit everything.
 Congratulations! You should now have a blog that loads rapidly, caches elegantly,
 sends email properly, and can support adding images and other media to blog posts! Most importantly,
 it will take advantage of Google's incredibly powerful infrastructure and scale gracefully to
-accomodate traffic that is hitting your blog.
+accommodate traffic that is hitting your blog.
 
 ### Maintaining
 
