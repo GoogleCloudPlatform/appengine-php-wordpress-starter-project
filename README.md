@@ -11,7 +11,7 @@ set up a Cloud SQL instance, as described [here](https://cloud.google.com/sql/do
 Cloud Storage bucket, as described [here](https://developers.google.com/storage/docs/signup). You'll want to name
 your Cloud SQL instance "wordpress" to match the config files provided here. To keep costs down, we suggest signing up for a D0 instance with package billing. 
 4. Visit your project in the
-[Google Cloud Console](http://cloud.google.com/console), going to the App Engine section's **IAM & Admin**
+[Google Cloud Console](http://cloud.google.com/console), going to the App Engine section's **IAM & Admin** > ***Service accounts***
 area, and make a note of the **Service Account Name** for your application, which has an e-mail address
 (e.g. `<PROJECT_ID>@appspot.gserviceaccount.com`). Then, visit the Cloud Storage section of your project,
 select the checkbox next to the bucket you created in step 3, click
