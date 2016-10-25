@@ -21,10 +21,10 @@
 
     if (isset($_SERVER['SERVER_SOFTWARE']) && strpos($_SERVER['SERVER_SOFTWARE'],'Google App Engine') !== false) {
         /** The name of the Cloud SQL database for WordPress */
-        define('DB_NAME', 'wordpress_db');
+        define('DB_NAME', 'wp');
         /** Live environment Cloud SQL login and SITE_URL info */
         /** Note that from App Engine, the password is not required, so leave it blank here */
-        define('DB_HOST', ':/cloudsql/refined-outlet-90118:us-central1:company-web-db');
+        define('DB_HOST', ':/cloudsql/refined-outlet-90118:us-central1:wp-db');
         define('DB_USER', 'alpaca');
         define('DB_PASSWORD', 'aimaster');
     } else {
