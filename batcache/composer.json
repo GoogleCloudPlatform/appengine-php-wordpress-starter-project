@@ -1,0 +1,15 @@
+{
+    "name"       : "automattic/batcache",
+    "description": "A memcached HTML page cache for WordPress.",
+    "homepage"   : "https://github.com/Automattic/batcache",
+    "type"       : "wordpress-muplugin",
+    "license"    : "GPL-2.0+",
+    "support"    : {
+			"issues": "https://github.com/Automattic/batcache/issues",
+			"forum":  "https://wordpress.org/support/plugin/batcache",
+			"source": "https://github.com/Automattic/batcache"
+	},
+    "require"    : {
+        "composer/installers": "~1.0"
+    }
+}
