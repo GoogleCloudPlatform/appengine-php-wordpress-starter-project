@@ -24,9 +24,9 @@
         define('DB_NAME', 'wordpress_db');
         /** Live environment Cloud SQL login and SITE_URL info */
         /** Note that from App Engine, the password is not required, so leave it blank here */
-        define('DB_HOST', ':/cloudsql/your-project-id:wordpress');
-        define('DB_USER', 'root');
-        define('DB_PASSWORD', '');
+        define('DB_HOST', ':/cloudsql/refined-outlet-90118:us-central1:company-web-db');
+        define('DB_USER', 'alpaca');
+        define('DB_PASSWORD', 'aimaster');
     } else {
         /** The name of the local database for WordPress */
         define('DB_NAME', 'wordpress_db');
@@ -97,13 +97,13 @@
      * It is strongly recommended that plugin and theme developers use WP_DEBUG
      * in their development environments.
      */
-    define('WP_DEBUG', false);
-    
+    define('WP_DEBUG', true);
+
     /**
      * Disable default wp-cron in favor of a real cron job
      */
     define('DISABLE_WP_CRON', true);
-    
+
     // configures batcache
     $batcache = [
       'seconds'=>0,
@@ -118,5 +118,3 @@
 
     /** Sets up WordPress vars and included files. */
     require_once(ABSPATH . 'wp-settings.php');
-
-

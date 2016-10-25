@@ -1,5 +1,3 @@
-application: your-project-id
-version: wpfromstarterproject
 runtime: php55
 api_version: 1
 
@@ -54,3 +52,4 @@ skip_files:
 - ^(.*/)?\.bat$
 - ^(.*/)?\.sh$
 - ^(.*/)?\.md$
+- .git
