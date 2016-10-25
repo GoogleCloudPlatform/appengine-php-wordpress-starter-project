@@ -7,6 +7,3 @@
 [submodule "wp-memcache"]
 	path = wp-memcache
 	url = https://github.com/jeremyfelt/Memcached-Object-Cache.git
-[submodule "wordpress"]
-	path = wordpress
-	url = https://github.com/WordPress/WordPress.git

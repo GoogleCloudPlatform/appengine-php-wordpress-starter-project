@@ -1,0 +1,15 @@
+#icon-appengine {
+	background: transparent url( 'logo.png' ) no-repeat;
+}
+#appengine-footer-logo {
+	margin: 0 12px 2px;
+}
+/* Hide the logo when the sidebar is collapsed */
+body.folded #appengine-footer-logo {
+	display: none;
+}
+@media only screen and (max-width: 900px) {
+	body.auto-fold #appengine-footer-logo {
+		display: none;
+	}
+}

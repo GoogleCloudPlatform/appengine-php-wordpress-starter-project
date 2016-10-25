@@ -21,12 +21,12 @@
 
     if (isset($_SERVER['SERVER_SOFTWARE']) && strpos($_SERVER['SERVER_SOFTWARE'],'Google App Engine') !== false) {
         /** The name of the Cloud SQL database for WordPress */
-        define('DB_NAME', 'wordpress_db');
+        define('DB_NAME', 'wp');
         /** Live environment Cloud SQL login and SITE_URL info */
         /** Note that from App Engine, the password is not required, so leave it blank here */
-        define('DB_HOST', ':/cloudsql/your-project-id:wordpress');
-        define('DB_USER', 'root');
-        define('DB_PASSWORD', '');
+        define('DB_HOST', ':/cloudsql/refined-outlet-90118:us-central1:wp-db');
+        define('DB_USER', 'alpaca');
+        define('DB_PASSWORD', 'aimaster');
     } else {
         /** The name of the local database for WordPress */
         define('DB_NAME', 'wordpress_db');
@@ -78,7 +78,7 @@
      * You can have multiple installations in one database if you give each a unique
      * prefix. Only numbers, letters, and underscores please!
      */
-    $table_prefix  = 'wp_';
+    $table_prefix  = 'alpaca_';
 
     /**
      * WordPress Localized Language, defaults to English.
@@ -97,13 +97,13 @@
      * It is strongly recommended that plugin and theme developers use WP_DEBUG
      * in their development environments.
      */
-    define('WP_DEBUG', false);
-    
+    define('WP_DEBUG', true);
+
     /**
      * Disable default wp-cron in favor of a real cron job
      */
     define('DISABLE_WP_CRON', true);
-    
+
     // configures batcache
     $batcache = [
       'seconds'=>0,
@@ -118,5 +118,3 @@
 
     /** Sets up WordPress vars and included files. */
     require_once(ABSPATH . 'wp-settings.php');
-
-
