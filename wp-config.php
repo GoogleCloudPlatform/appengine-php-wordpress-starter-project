@@ -33,7 +33,7 @@
         /** Local environment MySQL login info */
         define('DB_HOST', '127.0.0.1');
         define('DB_USER', 'root');
-        define('DB_PASSWORD', 'password');
+        define('DB_PASSWORD', 'Start@20140609');
     }
 
     // Determine HTTP or HTTPS, then set WP_SITEURL and WP_HOME
